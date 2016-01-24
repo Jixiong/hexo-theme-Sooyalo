@@ -35,7 +35,7 @@ sidebar:
             title: global.categories
             url: /all-categories
             icon: bookmark
-        #tags:
+        # tags:
         #    title: global.tags
         #    url: /all-tags
         #    icon: tags
@@ -57,7 +57,7 @@ sidebar:
     author_links:
          github:
              title: global.github
-             url: https://github.com/kaedea
+             url: https://github.com/grzhan
              icon: github-square
         # stack_overflow:
         #     title: global.stack_overflow
@@ -81,13 +81,13 @@ sidebar:
         #     icon: linkedin
          mail:
              title: global.mail
-             url: mailto:kidhaibara@gmail.com
+             url: mailto:i@grr.moe
              icon: envelope-o
-    #rss:
-    #    rss:
-    #        title: global.rss
-    #        url: /atom.xml
-    #        icon: rss
+    rss:
+       rss:
+           title: global.rss
+           url: /atom.xml
+           icon: rss
 
 
 # Header configuration
@@ -104,14 +104,14 @@ header:
 # Author
 # Your biography and your job is editable in each languages files in `languages` folder
 author:
-    email: kidhaibara@gmail.com
-    location: Chiba Japan
-    bio: 話は安いものですので、コードを表させてください！
-    job: Android Develop
+    email: i@grr.moe
+    location: Shanghai China
+    bio: 伪宅/码农
+    job: 某校研究生
     # Your profile picture located in folder `source/_images/` (development)
     # or in `source/assets/images/` (production).
     # Overwritten by your gravatar image if `gravatar_image` is enabled
-    picture: avatar_01.png
+    picture: ayano.png
     # Your Twitter username without the @. E.g : `tranquilpeak`
     twitter:
     # Your google plus profile id. E.g : `+Tranquilpeak` or `123812884128439`
@@ -142,9 +142,9 @@ go_to_message: Go to the website
 # Current image is on Cloudinary.
 # Otherwise put your image in folder `source/_images/` (development)  or in `source/assets/images/` if you can't or don't want to build the theme,
 # and use relative url : `/assets/images/your-image.png`
-cover_image: http://7xih5c.com1.z0.glb.clouddn.com/15-10-7/29875909.jpg
+cover_image: /assets/images/cover.jpg
 # Your favicon located in folder `source/_images/` (development) or in `source/assets/images/` (production)
-favicon: favicon.png
+favicon: f.png
 # Display an image gallery at the end of a post which have photos variables (false: disabled, true: enabled)
 image_gallery: true
 # Pagination behavior of archive, category and tag pages (false: pagination disabled, true: pagination enabled)
@@ -156,13 +156,13 @@ tag_pagination: true
 
 # Integrated services
 # Your Disqus shortname
-disqus_shortname: 
+disqus_shortname: bloggrrmoe
 # Your Google analystics web property ID : UA-XXXXX-X
 google_analytics_id:
 # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
-gravatar_email: #kidhaibara@gmail.com
+# gravatar_email: envy518@gmail.com
 # Your swiftype install key
-swiftype_install_key: 
+swiftype_install_key: E7_76DCmyGm3-BD26Enz
 # Your Facebook user ids used to connect your blog with your facebook user accounts (Facebook Insights). Separate ids with comma. e.g : 9830047,1003342
 fb_admin_ids:
 # Your Facebook app id used to connect your blog with your facebook app account (Facebook Insights). E.g : 9841307
