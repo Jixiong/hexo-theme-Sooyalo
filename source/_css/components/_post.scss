@@ -30,7 +30,7 @@
     .post-content {
         font-family: $font_content;
         color:       map-get($colors, base);
-        margin-top:  50px;
+        margin-top:  15px;
         font-weight: 300;
         overflow:    hidden;
         word-break:  break-word;
@@ -42,7 +42,8 @@
             width:         auto;
             max-width:     100%;
             border-radius: 3px;
-            border:        1px solid map-get($colors, grey300);   
+            border:        1px solid map-get($colors, grey300);
+            margin-bottom: 1.5em;   
         }
     }
     .post-footer {
