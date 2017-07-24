@@ -150,7 +150,7 @@ $header:(
 $sidebar: (
     'md-screen-width': 75px,
     'lg-screen-width': 250px,
-    'background':      rgba(17, 26, 35, 0),
+    'background':      url('/assets/images/cover.jpg'),
     'color':           map-get($colors, sidebar),
     'color-hover':     map-get($colors, sidebar-hover)
 );
