@@ -1,6 +1,6 @@
 var commands = require('./commands');
-var pkg = require('../package.json');
-var abbreviations = require('./abbreviations')(commands);
+var version = require('./version');
+var abbreviations = require('./util/abbreviations')(commands);
 
 function clearRuntimeCache() {
     // Note that in edge cases, some architecture components instance's
@@ -11,7 +11,7 @@ function clearRuntimeCache() {
 }
 
 module.exports = {
-    version: pkg.version,
+    version: version,
     commands: commands,
     config: require('./config')(),
     abbreviations: abbreviations,

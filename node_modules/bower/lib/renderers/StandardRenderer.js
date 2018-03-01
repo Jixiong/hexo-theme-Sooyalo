@@ -6,7 +6,7 @@ var Q = require('q');
 var stringifyObject = require('stringify-object');
 var os = require('os');
 var semverUtils = require('semver-utils');
-var pkg = require(path.join(__dirname, '../..', 'package.json'));
+var version = require('../version');
 var template = require('../util/template');
 
 function StandardRenderer(command, config) {
@@ -72,19 +72,17 @@ StandardRenderer.prototype.error = function (err) {
     // Print trace if verbose, the error has no code
     // or if the error is a node error
     if (this._config.verbose || !err.code || err.errno) {
-        // jscs:disable requireCamelCaseOrUpperCaseIdentifiers
         stack = err.fstream_stack || err.stack || 'N/A';
         str = chalk.yellow('\nStack trace:\n');
         str += (Array.isArray(stack) ? stack.join('\n') : stack) + '\n';
         str += chalk.yellow('\nConsole trace:\n');
-        // jscs:enable requireCamelCaseOrUpperCaseIdentifiers
 
         this._write(process.stderr, str);
         this._write(process.stderr, new Error().stack);
 
         // Print bower version, node version and system info.
         this._write(process.stderr, chalk.yellow('\nSystem info:\n'));
-        this._write(process.stderr, 'Bower version: ' + pkg.version + '\n');
+        this._write(process.stderr, 'Bower version: ' + version + '\n');
         this._write(process.stderr, 'Node version: ' + process.versions.node + '\n');
         this._write(process.stderr, 'OS: ' + os.type() + ' ' + os.release() + ' ' + os.arch() + '\n');
     }
@@ -214,7 +212,7 @@ StandardRenderer.prototype._info = function (data) {
         data.numPreReleases = 0;
         // If output isn't verbose, hide prereleases
         if (!this._config.verbose) {
-            data.versions = mout.array.filter(data.versions, function(version) {
+            data.versions = mout.array.filter(data.versions, function (version) {
                 version = semverUtils.parse(version);
                 if (!version.release && !version.build) {
                     return true;
