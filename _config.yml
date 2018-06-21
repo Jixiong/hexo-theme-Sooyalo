@@ -169,6 +169,8 @@ fb_admin_ids:
 # Your Facebook app id used to connect your blog with your facebook app account (Facebook Insights). E.g : 9841307
 fb_app_id:
 
+busuanzi: true
+
 #live2d:
 #  enable: true
 #  scriptFrom: local

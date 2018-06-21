@@ -2,4 +2,11 @@
     <span class="copyrights">
         Copyrights &copy; <%= date(new Date(), 'YYYY') + ' ' + config.author || config.title %>. All Rights Reserved.
     </span>
+    <p>Themed by <a href="https://github.com/Jixiong/hexo-theme-Sooyalo">Sooyalo</a> | Powered by <a href="https://hexo.io/">Hexo</a>.</p>
+    </br>
+    <% if(theme.busuanzi) { %>
+         <li class="busuanzi_inline-li">
+            <span id="busuanzi_value_page_pv"></span> <%= __('views') %>
+        </li>
+    <% } %>
 </footer>

@@ -10,30 +10,34 @@
         sidebarBehavior = theme.sidebar_behavior;
     }
 %>
-<!DOCTYPE html>
-<html lang="<%= config.language %>">
+    <!DOCTYPE html>
+    <html lang="<%= config.language %>">
     <%- partial('_partial/head') %>
-    <body>
-        <div id="blog">
-            <%- partial('_partial/header', {sidebarBehavior: sidebarBehavior}) %>
-            <%- partial('_partial/sidebar', {sidebarBehavior: sidebarBehavior}) %>
-            <%- partial('_partial/post/header-cover', {post: page, sidebarBehavior: sidebarBehavior}) %>
-            <div id="main" data-behavior="<%= sidebarBehavior %>"
-                 class="<%= (page.coverImage ? 'hasCover' : '') %>
+
+        <body>
+            <canvas class="fireworks"></canvas>
+            <div id="blog">
+                <%- partial('_partial/header', {sidebarBehavior: sidebarBehavior}) %>
+                    <%- partial('_partial/sidebar', {sidebarBehavior: sidebarBehavior}) %>
+                        <%- partial('_partial/post/header-cover', {post: page, sidebarBehavior: sidebarBehavior}) %>
+                            <div id="main" data-behavior="<%= sidebarBehavior %>" class="<%= (page.coverImage ? 'hasCover' : '') %>
                         <%= (page.coverMeta === 'out' ? 'hasCoverMetaOut' : 'hasCoverMetaIn') %>
                         <%= (page.coverCaption ? 'hasCoverCaption' : '') %>">
-                <%- body %>
-                <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+                                <%- body %>
+                                    <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+                            </div>
+                            <% if (is_post()) { %>
+                                <div id="bottom-bar" class="post-bottom-bar" data-behavior="<%= sidebarBehavior %>">
+                                    <%- partial('_partial/post/actions', {post: page}) %>
+                                </div>
+                                <%- partial('_partial/post/share-options', {post: page, sidebarBehavior: sidebarBehavior}) %>
+                                    <% } %>
             </div>
-            <% if (is_post()) { %>
-                <div id="bottom-bar" class="post-bottom-bar" data-behavior="<%= sidebarBehavior %>">
-                    <%- partial('_partial/post/actions', {post: page}) %>
-                </div>
-                <%- partial('_partial/post/share-options', {post: page, sidebarBehavior: sidebarBehavior}) %>
-            <% } %>
-        </div>
-        <%- partial('_partial/about', null, {cache: !config.relative_link}) %>
-        <%- partial('_partial/cover', null, {cache: !config.relative_link}) %>
-    </body>
-    <%- partial('_partial/script', {post: page}) %>
-</html>
+            <%- partial('_partial/about', null, {cache: !config.relative_link}) %>
+                <%- partial('_partial/cover', null, {cache: !config.relative_link}) %>
+
+
+        </body>
+        <%- partial('_partial/script', {post: page}) %>
+
+    </html>
