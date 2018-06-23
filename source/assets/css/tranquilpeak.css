@@ -57,7 +57,7 @@ body {
   padding: 0;
   background: white;
   font-family: "Open Sans", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   line-height: 1.85em;
   letter-spacing: 0.01em;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -338,8 +338,8 @@ blockquote {
 
 @media only screen and (min-width: 1024px) {
   #bottom-bar[data-behavior="1"] {
-    width: calc(100% - 250px - 15px * 2);
-    left: 250px; }
+    width: calc(100% - 250px - 170px * 2);
+    left: 310px; }
     #bottom-bar[data-behavior="1"].pushed {
       -webkit-transform: translate3d(250px, 0, 0);
       -moz-transform: translate3d(250px, 0, 0);
@@ -500,7 +500,7 @@ blockquote {
   #main[data-behavior="1"] {
     padding-top: 15px;
     float: right;
-    width: calc(100% - 250px); }
+    width: calc(100% - 310px); }
   #main[data-behavior="2"] {
     padding-top: 15px;
     float: right;
@@ -528,7 +528,7 @@ blockquote {
   position: fixed;
   top: 0;
   background: url("/assets/images/cover.jpg");
-  background-size: 400% 150%;
+  background-size: 170% 100%;
   overflow: auto;
   z-index: 20;
   transition: transform .25s ease-in-out;
@@ -734,7 +734,7 @@ blockquote {
 
 @media only screen and (min-width: 1024px) {
   #sidebar[data-behavior="1"] {
-    width: 250px; }
+    width: 310px; }
     #sidebar[data-behavior="1"] .sidebar-profile {
       height: 130px;
       padding-top: 40px;
@@ -1658,7 +1658,7 @@ a.link-unstyled a.link, a.link-unstyled a.link:hover, a.link-unstyled a.link:act
 
 .post {
   position: relative;
-  width: 100%;
+  width: 81%;
   display: inline-block;
   vertical-align: top; }
   .post .post-header .post-title {
@@ -2306,7 +2306,7 @@ a.tag--small,
     height: 48px;
     width: 48px;
     top: 78%;
-    left: 280px;
+    left: 320px;
     position: fixed;
     right: -100px;
     z-index: 99;
