@@ -1,6 +1,9 @@
-## Hexo主题 Themia
-
-**Themia**是一个华丽的Hexo响应式主题，由**LouisBarranqueiro**开发的主题[TranquiPeak](https://github.com/LouisBarranqueiro/tranquilpeak-hexo-theme)的基础上改造而来，**大部分功能都是原有主题的**，只是为了我自己的需求做了小部分的修改。
+## Hexo主题 Sooyalo
+ **Themia**是一个华丽的Hexo响应式主题，最初是由**LouisBarranqueiro**开发的主题[TranquiPeak](https://github.com/LouisBarranqueiro/tranquilpeak-hexo-theme)的基础上改造而来
+而后又由**kaedea**进行修改[Hexo响应式主题 Themia](http://kaedea.com/2015/10/05/themia-demo-using-thmia/)
+最后我再进行了一小部分的个人加工放置于git以便于进行个人备份
+ 再次重申一下
+**大部分功能都是前两个原有主题的**，只是为了我自己的需求做了小部分的修改。
 
 ![](/themia_mockup.png)
 
@@ -9,11 +12,12 @@
 详细情况可以参考[Hexo响应式主题 Themia](http://kaedea.com/2015/10/05/themia-demo-using-thmia/)。
 
 ### 预览 ###
-[demo](http://kaedea.com/categories/Themia/)
+[kaedea](http://kaedea.com/categories/Themia/)
 
 ### 修改 ###
 如果你打算对Themia进行修改，请参考[developer documentation](/docs/developer.md)。
 
 ### License ###
-
+License来源于最初开发者LouisBarranqueiro[GNU General Public License v3.0](https://github.com/LouisBarranqueiro/tranquilpeak-hexo-theme/blob/master/LICENSE)
 Tranquilpeak-hexo-theme is released under the terms of the [GNU General Public License v3.0](https://github.com/LouisBarranqueiro/tranquilpeak-hexo-theme/blob/master/LICENSE)
+
