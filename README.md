@@ -12,7 +12,7 @@
 详细情况可以参考[Hexo响应式主题 Themia](http://kaedea.com/2015/10/05/themia-demo-using-thmia/)。
 
 ### 预览 ###
-[yansera](https:www.yansera.com)
+[yansera](https://www.yansera.com)
 
 ### 修改 ###
 如果你打算对Sooyalo进行修改，请参考[developer documentation](/docs/developer.md)。
