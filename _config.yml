@@ -188,3 +188,5 @@ busuanzi: true
 live2d:
   model: koharu
   bottom: -60
+  mobile:
+    show: false
