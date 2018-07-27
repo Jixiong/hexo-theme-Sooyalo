@@ -57,7 +57,7 @@ body {
   padding: 0;
   background: white;
   font-family: "Open Sans", sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   line-height: 1.85em;
   letter-spacing: 0.01em;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -338,7 +338,7 @@ blockquote {
 
 @media only screen and (min-width: 1024px) {
   #bottom-bar[data-behavior="1"] {
-    width: calc(100% - 250px - 170px * 2);
+    width: calc(100% - 250px - 190px * 2);
     left: 310px; }
     #bottom-bar[data-behavior="1"].pushed {
       -webkit-transform: translate3d(250px, 0, 0);
@@ -528,13 +528,13 @@ blockquote {
   position: fixed;
   top: 0;
   background: url("/assets/images/cover.jpg");
-  background-size: 170% 100%;
+  background-size: 190% 100%;
   overflow: auto;
   z-index: 20;
   transition: transform .25s ease-in-out;
   -webkit-transition: -webkit-transform .25s ease-in-out; }
   #sidebar .sidebar-profile {
-    color: #ebebeb;
+    color: #1c5c92;
     text-align: center;
     padding-top: 18px;
     margin-bottom: 15px; }
@@ -1638,7 +1638,7 @@ a.link-unstyled a.link, a.link-unstyled a.link:hover, a.link-unstyled a.link:act
 
 .pagination-bar {
   height: auto;
-  width: 100%;
+  width: 80%;
   height: 60px; }
   .pagination-bar .pagination {
     height: 60px;
@@ -1894,7 +1894,7 @@ a.link-unstyled a.link, a.link-unstyled a.link:hover, a.link-unstyled a.link:act
 
 .postShorten {
   position: relative;
-  width: 100%;
+  width: 80%;
   display: inline-block;
   vertical-align: top; }
   .postShorten .postShorten-header .postShorten-title {
