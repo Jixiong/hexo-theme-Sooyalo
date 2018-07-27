@@ -12,10 +12,10 @@
 详细情况可以参考[Hexo响应式主题 Themia](http://kaedea.com/2015/10/05/themia-demo-using-thmia/)。
 
 ### 预览 ###
-[kaedea](http://kaedea.com/categories/Themia/)
+[yansera](https:www.yansera.com)
 
 ### 修改 ###
-如果你打算对Themia进行修改，请参考[developer documentation](/docs/developer.md)。
+如果你打算对Sooyalo进行修改，请参考[developer documentation](/docs/developer.md)。
 
 ### License ###
 License来源于最初开发者LouisBarranqueiro[GNU General Public License v3.0](https://github.com/LouisBarranqueiro/tranquilpeak-hexo-theme/blob/master/LICENSE)
