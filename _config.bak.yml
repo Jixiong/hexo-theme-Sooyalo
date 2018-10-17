@@ -35,14 +35,14 @@ sidebar:
             title: global.categories
             url: /all-categories
             icon: bookmark
-        tags:
-            title: global.tags
-            url: /all-tags
-            icon: tags
+        #tags:
+        #    title: global.tags
+        #    url: /all-tags
+        #    icon: tags
         archives:
             title: global.archives
             url: /all-archives
-            icon: bars
+            icon: archive
         search:
             title: global.search
             url: /#search
@@ -51,14 +51,14 @@ sidebar:
             class: st-search-show-outputs
         about:
             title: global.about
-            url: /about
-            icon: info-circle
+            url: /#about
+            icon: question
 
     author_links:
          github:
              title: global.github
-             url: https://github.com/jixiong
-             icon: github-square
+             url: https://github.com/kaedea
+             icon: github
         # stack_overflow:
         #     title: global.stack_overflow
         #     url: http://stackoverflow.com/users
@@ -81,13 +81,13 @@ sidebar:
         #     icon: linkedin
          mail:
              title: global.mail
-             url: mailto:jixiong@qq.com
+             url: mailto:kidhaibara@gmail.com
              icon: envelope-o
-    rss:
-       rss:
-           title: global.rss
-           url: /atom.xml
-           icon: rss
+    #rss:
+    #    rss:
+    #        title: global.rss
+    #        url: /atom.xml
+    #        icon: rss
 
 
 # Header configuration
@@ -96,22 +96,22 @@ sidebar:
 # DON'T edit `header`, `right_link`, `url`, `icon` and `class` variable name
 header:
     right_link:
-         url: /#search
-         icon: search
-         class: st-search-show-outputs
+         # url: /#search
+         # icon: search
+         # class: st-search-show-outputs
 
 
 # Author
 # Your biography and your job is editable in each languages files in `languages` folder
 author:
-    email: jixiong@qq.com
-    location: Rouen France
-    bio: 伪宅/码农
-    job: 某校研究生
+    email: kidhaibara@gmail.com
+    location: Chiba Japan
+    bio: 話は安いものですので、コードを表させてください！
+    job: Android Develop
     # Your profile picture located in folder `source/_images/` (development)
     # or in `source/assets/images/` (production).
     # Overwritten by your gravatar image if `gravatar_image` is enabled
-    picture: ayano.jpg
+    picture: avatar_01.png
     # Your Twitter username without the @. E.g : `tranquilpeak`
     twitter:
     # Your google plus profile id. E.g : `+Tranquilpeak` or `123812884128439`
@@ -142,9 +142,9 @@ go_to_message: Go to the website
 # Current image is on Cloudinary.
 # Otherwise put your image in folder `source/_images/` (development)  or in `source/assets/images/` if you can't or don't want to build the theme,
 # and use relative url : `/assets/images/your-image.png`
-cover_image: /assets/images/cover.jpg
+cover_image: /assets/images/cover_miku.jpg
 # Your favicon located in folder `source/_images/` (development) or in `source/assets/images/` (production)
-favicon: icone.jpg
+favicon: favicon.png
 # Display an image gallery at the end of a post which have photos variables (false: disabled, true: enabled)
 image_gallery: true
 # Pagination behavior of archive, category and tag pages (false: pagination disabled, true: pagination enabled)
@@ -156,37 +156,14 @@ tag_pagination: true
 
 # Integrated services
 # Your Disqus shortname
-disqus_shortname: izzyliu
+disqus_shortname: 
 # Your Google analystics web property ID : UA-XXXXX-X
 google_analytics_id:
 # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
-# gravatar_email: envy518@gmail.com
+gravatar_email: #kidhaibara@gmail.com
 # Your swiftype install key
-swiftype_install_key:
-    enable: true
+swiftype_install_key: 
 # Your Facebook user ids used to connect your blog with your facebook user accounts (Facebook Insights). Separate ids with comma. e.g : 9830047,1003342
 fb_admin_ids:
 # Your Facebook app id used to connect your blog with your facebook app account (Facebook Insights). E.g : 9841307
 fb_app_id:
-
-busuanzi: true
-
-#live2d:
-#  enable: true
-#  scriptFrom: local
-#  pluginRootPath: live2dw/
-#  pluginJsPath: lib/
-#  pluginModelPath: assets/
-#  model:
-#    use: live2d-widget-model-wanko
-#  display:
-#    position: right
-#    width: 150
-#    height: 300
-#  mobile:
-#    show: true
-live2d:
-  model: koharu
-  bottom: -60
-  mobile:
-    show: false
